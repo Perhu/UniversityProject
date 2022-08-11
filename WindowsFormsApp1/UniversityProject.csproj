@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3DB29D48-43FA-411B-810C-40A6D07BF180}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DeletePayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeletePayment.Designer.cs">
+      <DependentUpon>DeletePayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteParticipant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteParticipant.Designer.cs">
+      <DependentUpon>DeleteParticipant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteLectures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteLectures.Designer.cs">
+      <DependentUpon>DeleteLectures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteLectors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteLectors.Designer.cs">
+      <DependentUpon>DeleteLectors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Paid.Designer.cs">
+      <DependentUpon>Paid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Town.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Town.Designer.cs">
+      <DependentUpon>Town.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnPaid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnPaid.Designer.cs">
+      <DependentUpon>UnPaid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tax.Designer.cs">
+      <DependentUpon>Tax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaidParam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaidParam.Designer.cs">
+      <DependentUpon>PaidParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sorted.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sorted.Designer.cs">
+      <DependentUpon>Sorted.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LessThen500.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LessThen500.Designer.cs">
+      <DependentUpon>LessThen500.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBaseConnect.cs" />
+    <Compile Include="StartUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartUp.Designer.cs">
+      <DependentUpon>StartUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Beginners.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Beginners.Designer.cs">
+      <DependentUpon>Beginners.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertLectors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertLectors.Designer.cs">
+      <DependentUpon>InsertLectors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertPayments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertPayments.Designer.cs">
+      <DependentUpon>InsertPayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertParticipant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertParticipant.Designer.cs">
+      <DependentUpon>InsertParticipant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertLectures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertLectures.Designer.cs">
+      <DependentUpon>InsertLectures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DeletePayment.resx">
+      <DependentUpon>DeletePayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteParticipant.resx">
+      <DependentUpon>DeleteParticipant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteLectures.resx">
+      <DependentUpon>DeleteLectures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteLectors.resx">
+      <DependentUpon>DeleteLectors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paid.resx">
+      <DependentUpon>Paid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Town.resx">
+      <DependentUpon>Town.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnPaid.resx">
+      <DependentUpon>UnPaid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tax.resx">
+      <DependentUpon>Tax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaidParam.resx">
+      <DependentUpon>PaidParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sorted.resx">
+      <DependentUpon>Sorted.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LessThen500.resx">
+      <DependentUpon>LessThen500.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartUp.resx">
+      <DependentUpon>StartUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Beginners.resx">
+      <DependentUpon>Beginners.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertLectors.resx">
+      <DependentUpon>InsertLectors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertPayments.resx">
+      <DependentUpon>InsertPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertParticipant.resx">
+      <DependentUpon>InsertParticipant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertLectures.resx">
+      <DependentUpon>InsertLectures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
